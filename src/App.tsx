@@ -1,5 +1,7 @@
+import PostList from "./PostList";
+
 const App = () => {
-  return <h1>Hello React + TS</h1>;
+  return <PostList />;
 };
 
 export default App;
