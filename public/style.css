@@ -5,119 +5,91 @@
 }
 
 body {
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    position: relative;
-    width: 1920px;
-    height: 1080px;
-    left: 2095px;
-    top: 107px;
+    padding: 0;
     background: #191919;
 }
 
 header {
+    width: 100%;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    gap: 580px;
-    width: 1920px;
-    height: 60px;
+    gap: 20px;
     background: #191919;
     border-bottom: 0.2px solid #FFFFFF;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0 auto;
     width: 204px;
     height: 39px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .search {
+    width: 40%;
+    max-width: 480px;
+    height: 45px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 0 auto;
-    width: 480px;
-    height: 45px;
     background: #626262;
     border-radius: 15px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    flex-grow: 1;
 }
 
 .profile {
+    width: 82px;
+    height: 64px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 8px 0px;
     gap: 10px;
-    margin: 0 auto;
-    width: 82px;
-    height: 64px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0px;
+    flex-grow: 1;
 }
 
 .burger-menu {
+    width: 250px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-    gap: 312px;
-    width: 250px;
-    height: 1020px;
     background: #191919;
     border-right: 0.2px solid #FFFFFF;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    width: 1920px;
-    height: 1020px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .main-page {
+    width: calc(100% - 250px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     gap: 10px;
-    width: 1670px;
-    height: 1020px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
     flex-grow: 1;
 }
