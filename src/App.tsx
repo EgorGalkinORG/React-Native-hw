@@ -1,5 +1,13 @@
+import React from "react";
+import "./App.css";
+import  searchSVG, { ReactComponent } from './assets/svg/Vector.svg';
+
 const App = () => {
-  return <h1>Hello React + TS</h1>;
+  return (
+    <div className="app-container">
+      
+    </div>
+  );
 };
 
 export default App;

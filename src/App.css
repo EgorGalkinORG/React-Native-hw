@@ -5,16 +5,20 @@
 }
 
 body {
+    background: #191919;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.app-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     position: relative;
     width: 1920px;
-    height: 1080px;
-    left: 2095px;
-    top: 107px;
+    min-height: 1080px;
     background: #191919;
+    margin: 0 auto;
 }
 
 header {
@@ -23,15 +27,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    gap: 580px;
-    width: 1920px;
-    height: 60px;
+    width: 100%;
+    height: 8%;
     background: #191919;
     border-bottom: 0.2px solid #FFFFFF;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .logo {
@@ -39,13 +38,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    margin: 0 auto;
     width: 204px;
     height: 39px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: white;
 }
 
 .search {
@@ -54,28 +49,51 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 0 auto;
     width: 480px;
     height: 45px;
     background: #626262;
     border-radius: 15px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 90%;
+    font-size: 16px;
+}
+
+.search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    height: 100%;
+}
+
+.search button ReactComponent {
+    fill: white;
+    width: 10%;
+    height: 100%;
 }
 
 .profile {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 8px 0px;
     gap: 10px;
-    margin: 0 auto;
     width: 82px;
     height: 64px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
 }
 
 .burger-menu {
@@ -84,28 +102,42 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-    gap: 312px;
     width: 250px;
-    height: 1020px;
+    height: 100%;
     background: #191919;
     border-right: 0.2px solid #FFFFFF;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
-.main {
+.burger-menu div a {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
-    width: 1920px;
-    height: 1020px;
+    padding: 9px 45px;
+    gap: 10px;
+    width: 100%;
     flex: none;
-    order: 1;
     align-self: stretch;
-    flex-grow: 1;
+    flex-grow: 0;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.burger-menu p {
+    margin: 0 auto;
+    width: 220px;
+    height: 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
 
 .main-page {
@@ -113,11 +145,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    gap: 10px;
-    width: 1670px;
-    height: 1020px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 1;
+    width: 100%;
+    height: 100%;
 }
+
