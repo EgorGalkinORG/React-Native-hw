@@ -22,6 +22,8 @@ body {
 }
 
 header {
+    width: 100%;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,8 +36,9 @@ header {
 }
 
 .logo {
+    width: 204px;
+    height: 39px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 204px;
@@ -44,8 +47,10 @@ header {
 }
 
 .search {
+    width: 40%;
+    max-width: 480px;
+    height: 45px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -79,8 +84,9 @@ header {
 }
 
 .profile {
+    width: 82px;
+    height: 64px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 10px;
     width: 82px;
@@ -97,6 +103,8 @@ header {
 }
 
 .burger-menu {
+    width: 250px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,6 +149,8 @@ header {
 }
 
 .main-page {
+    width: calc(100% - 250px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
