@@ -1,36 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background: #191919;
+    background-color: #191919;
+    width: 100vw;
     font-family: sans-serif;
     overflow-x: hidden;
 }
 
-.app-container {
+.master {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    width: 1920px;
-    min-height: 1080px;
-    background: #191919;
-    margin: 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 92%;
 }
 
 header {
     width: 100%;
-    height: 60px;
+    height: 8%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    width: 100%;
-    height: 8%;
     background: #191919;
     border-bottom: 0.2px solid #FFFFFF;
 }
@@ -41,8 +36,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 204px;
-    height: 39px;
     color: white;
 }
 
@@ -54,8 +47,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: 480px;
-    height: 45px;
     background: #626262;
     border-radius: 15px;
 }
@@ -77,29 +68,13 @@ header {
     height: 100%;
 }
 
-.search button ReactComponent {
-    fill: white;
-    width: 10%;
-    height: 100%;
-}
-
 .profile {
     width: 82px;
     height: 64px;
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 82px;
-    height: 64px;
     color: white;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
 }
 
 .burger-menu {
@@ -110,8 +85,6 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px;
-    width: 250px;
-    height: 100%;
     background: #191919;
     border-right: 0.2px solid #FFFFFF;
 }
@@ -124,10 +97,7 @@ header {
     padding: 9px 45px;
     gap: 10px;
     width: 100%;
-    flex: none;
-    align-self: stretch;
-    flex-grow: 0;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -140,22 +110,10 @@ header {
     margin: 0 auto;
     width: 220px;
     height: 36px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
     line-height: 18px;
     color: #FFFFFF;
 }
-
-.main-page {
-    width: calc(100% - 250px);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-}
-

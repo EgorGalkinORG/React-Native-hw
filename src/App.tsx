@@ -10,10 +10,14 @@ const App = () => {
   return (
     <>
       <Header />
-      <Main>
-        <PostList />
-      </Main>
-      <Footer />
+      <div className="master">
+        <div className="burger-menu">
+          <Footer />
+        </div>
+        <Main>
+          <PostList />
+        </Main>
+      </div>
     </>
   );
 };
