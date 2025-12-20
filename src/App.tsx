@@ -1,24 +1,28 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import  searchSVG, { ReactComponent } from './assets/svg/Vector.svg';
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
-import PostList from "./components/PostList/PostList";
+import Main from "./components/Main/Main";
+import { HomePage } from "./pages/Home/HomePage";
+import { PostsPage } from "./pages/Posts/PostsPage";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <div className="master">
         <div className="burger-menu">
           <Footer />
         </div>
         <Main>
-          <PostList />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/posts" element={<PostsPage />} />
+          </Routes>
         </Main>
       </div>
-    </>
+    </BrowserRouter>
   );
 };
 

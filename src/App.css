@@ -3,9 +3,19 @@
     padding: 0;
 }
 
+#root {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+html {
+  min-height: 100vh;
+}
+
 body {
     background-color: #191919;
     width: 100vw;
+    min-height: 100vh;
     font-family: sans-serif;
     overflow-x: hidden;
 }
@@ -14,13 +24,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 100%;
-    height: 92%;
+    width: 100vw;
+    height: 91.9vh;
 }
 
 header {
     width: 100%;
-    height: 8%;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,6 +88,8 @@ header {
 }
 
 .burger-menu {
+    display: flex;
+    justify-content: flex-end;
     width: 250px;
     height: 100%;
     display: flex;
