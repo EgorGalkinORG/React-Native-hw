@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Post, Tag } from "../../types/post";
+import { Post, Tag } from "../../shared/types/post";
 import PostCard from "../PostCard/PostCard";
 
 const PostList = () => {
