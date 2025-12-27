@@ -20,3 +20,12 @@ export interface Post {
   comments?: Comment[];
   likedBy?: User[]; 
 }
+
+export interface Tag {
+  id: number;
+  name: string;
+}
+
+export interface PostTag {
+  tag: Tag;
+}

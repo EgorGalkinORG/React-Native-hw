@@ -11,14 +11,14 @@ interface PostCardProps {
 const PostCard = ({ id, title, description, likes: initialLikes }: PostCardProps) => {
   const [likesCount, setLikesCount] = useState(initialLikes);
   const [commentText, setCommentText] = useState("");
-  const { addComment, handleLike, loading } = usePostAction(id);
+  const { addComment, toggleLike, loading } = usePostAction(id);
 
   // статический юзер🥸
   const currentUserId = 1; 
 
   const onLikeClick = async () => {
     try {
-      await handleLike(currentUserId, false);
+      await toggleLike(currentUserId, false);
       setLikesCount(prev => prev + 1);
     } catch (e) { console.error(e); }
   };

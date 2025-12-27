@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Main from "./components/Main/Main";
-import { HomePage } from "./pages/Home/HomePage";
-import { PostsPage } from "./pages/Posts/PostsPage";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Main from "./Main/Main";
+import { HomePage } from "../pages/Home/HomePage";
+import { PostsPage } from "../pages/Posts/PostsPage";
 
 const App = () => {
   return (
