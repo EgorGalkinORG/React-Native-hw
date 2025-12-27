@@ -1,10 +1,14 @@
-export interface Tag {
+export interface Comment {
   id: number;
-  name: string;
+  body: string;
+  createdAt: string;
+  postId: number;
+  authorId: number;
 }
 
-export interface PostTag {
-  tag: Tag;
+export interface User {
+  id: number;
+  username: string;
 }
 
 export interface Post {
@@ -13,4 +17,6 @@ export interface Post {
   description: string;
   likes: number;
   tags: PostTag[];
+  comments?: Comment[];
+  likedBy?: User[]; 
 }
